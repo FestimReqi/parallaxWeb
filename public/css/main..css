@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
+
+
+body{
+    font-family: 'Darker Grotesque', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.first-page{
+    width: 100%;
+    height: 800px;
+    /* background: url(../component/background.jpg); */
+    position: relative;
+    background-color: #010922;
+    background-attachment: fixed ;
+}
+
+/* navbar */
+
+.logo{
+    display: gird;
+    justify-content: start;
+    align-items: center;
+    grid-gap: 1.5em;
+}
+
+.logo svg{
+    fill: #fff;
+    width: 55px;
+    height: 55px;
+}
+
+.nav {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0.1rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    z-index: 6;
+}
+
+
+
+.nav .menu li{
+    list-style-type: none;
+}
+
+.nav .menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    font-style: normal;
+    padding: 14px 16px;
+    transition: .3s ease-in-out;
+}
+
+.nav .menu li a:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+}
+
+
+.first-page .text{
+    color: #fff;
+    position: absolute;
+    top: -10vw;
+    left: 10%;
+    right: 50%;
+    z-index: 1;
+    filter: drop-shadow(9px -15px 18px #000);
+}
+
+.first-page .text h1{
+    color: #fff;
+    font-size: 20vw;
+}
+
+.first-page .mountain{
+    position: absolute;
+    width: 100%;
+    background-image: url(../component/mountain.png);
+    min-height: 500px;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: fixed;
+    filter: drop-shadow(9px -15px 18px #00BDFF);
+}
+
+/* .first-page .mountain img{
+    width: 100%;
+    height: auto;
+} */
+
+
+/* blur black */
+
+.black-text{
+    position: relative;
+}
+
+.black-text .black{
+    position: absolute;
+    margin-top: -30px;
+    width: 100%;
+    height: 100px;
+    /* background-color: #000; */
+    filter: drop-shadow(0px 0px 200px #000000);
+    /* filter: blur(10px); */
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(0,0,3,1) 9%, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 82%, rgba(0,0,0,0) 100%);
+    z-index: 99;
+}
+
+/* blur black  -v2*/
+
+.black-text-2{
+    position: relative;
+}
+
+.black-text-2 .black{
+    position: absolute;
+    margin-top: -90px;
+    width: 100%;
+    height: 100px;
+    /* background-color: #000; */
+    filter: drop-shadow(0px 0px 200px #000000);
+    /* filter: blur(10px); */
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(0,0,3,1) 9%, rgba(0,0,0,1) 45%, rgba(0,0,0,1) 82%, rgba(0,0,0,0) 100%);
+    z-index: 99;
+}
+
+
+
+/* offerts */
+
+.second-p{
+    width: 100%;
+    height: 1000px;
+    background: #010922;
+}
+
+/* text intro */
+
+.second-p .text-intro{
+    line-height: 300px;
+    display: grid;
+    grid-template-columns: 60vw 20vw;
+    grid-template-rows:auto ;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.second-p .text-intro h1{
+    color: #fff;
+    font-size: 3vw;
+}
+
+/* Offerts 01 */
+ 
+/* .second-p .offerts .offert{
+
+} */
+
+.second-p .offerts {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 3% 3%; /* Using 'gap' shorthand for row and column gaps */
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.second-p .offerts .offert{
+    border: 5px solid #fff;
+    display: inline-block;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    border-radius: 40px;
+}
+
+.second-p .offerts .offert .offert-img .brake-line{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.second-p .offerts .offert .offert-img .brake-line .hr{
+    width: 100%;
+    height: 3px;
+    border-radius: 100px;
+    background: #fff;
+}
+
+/*  */
+
+.second-p .offerts .offert .offert-img  .icon {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* text for "Exploring on foot/Croos/Jeep" */
+
+.second-p .offerts .offert .offert-img  .text p {
+    color: #fff;
+    font-size: 30px;
+}
+
+/* prince color and size */
+
+.second-p .offerts .offert .offert-img  .prince h1{
+    color: #fff;
+    font-size: 30px;
+}
+
+/* button and icon */
+
+
+/* .second-p .offerts .offert .offert-img  .button{
+   
+} */
+
+.second-p .offerts .offert .offert-img  .button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px 100px;
+    background-color: #fff;
+    color: rgb(2,0,36);
+    border-radius: 5px;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.second-p .offerts .offert .offert-img  .button a svg{
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    fill: rgb(2,0,36);
+    z-index: 99;
+}
+
+.second-p .offerts .offert .offert-img  .button a:hover{
+    background: #cacaca;
+}
+
+
+
+
+/* page-teeth */
+
+
+.page-teeth{
+    width: 100%;
+    height: 70rem;
+    background-color: rgb(2,0,36);
+    margin-top: -100px;
+
+}
+
+.page-teeth .text-v {
+    line-height: 100px;
+}
+
+.page-teeth .text-v h1{
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+}
+
+.page-teeth .photo img{
+    width: 100%;
+}
+
+/* footer */
+
+
+
+footer{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(2,0,36);
+}
+
+/* section one */
+ 
+footer .section-one{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 3% 3%; /* Using 'gap' shorthand for row and column gaps */
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+}
+
+/* section one MENU */
+
+footer .section-one .menu .header-menu{
+    color: #fff;
+}
+
+footer .section-one .menu .paragrah-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 10px;
+}
+
+footer .section-one .menu .paragrah-menu a:hover{
+    color: #010922;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+
+/* support */
+
+footer .section-one .support .header-Support{
+    color: #fff;
+}
+
+footer .section-one .support .paragrah-support a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 10px;
+}
+
+footer .section-one .support .paragrah-support a:hover{
+    color: #010922;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+
+/* Company */
+
+footer .section-one .company .header-company{
+    color: #fff;
+}
+
+footer .section-one .company .paragrah-company a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 10px;
+}
+
+footer .section-one .company .paragrah-company a:hover{
+    color: #010922;
+    text-shadow: 0px 0px 5px #fff;
+}
+
+
+/* Contact us */
+
+footer .section-one .Contact-us .header-Contact-us{
+    color: #fff;
+}
+
+footer .section-one .Contact-us .paragrah-Contact-us a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 10px;
+    padding: 14px 16px;
+    border-radius: 10px;
+    /* moz-transition: all .4s ease-in-out; */
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+footer .section-one .Contact-us .paragrah-Contact-us a:hover{
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    background-position: 100% 0;
+}
+
+/* footer section-two */
+
+footer .section-two{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 10% 10%; /* Using 'gap' shorthand for row and column gaps */
+    justify-content: space-around;
+}
+
+
+footer .section-two .from_festim h3{
+    color: #fff;
+}
+
+footer .section-two .from_festim h3 span{
+    color: red;
+} 
+
+
+
+footer .section-two .and_about_me h3 a{
+    text-decoration: none;
+    color: #fff;
+}
